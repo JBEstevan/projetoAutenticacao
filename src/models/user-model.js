@@ -15,7 +15,7 @@ const userSchema = new db.Schema({
             },
             required: true,
         },
-    },
+    }, 
     password: {
         type: String,
         required: true,
