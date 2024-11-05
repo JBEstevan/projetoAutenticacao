@@ -2,7 +2,7 @@ import db from "../config/db.js";
 import bcrypt from "bcrypt";
 
 const userSchema = new db.Schema({
-    nome: {
+    name: {
         type: String,
         required: true,
     },
