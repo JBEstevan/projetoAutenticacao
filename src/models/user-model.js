@@ -32,6 +32,17 @@ const userSchema = new db.Schema({
         required: true,
         default: "USU",
     },
+    phones: {
+        type: Array,
+    },
+    house_number: {
+        type: String,
+    },
+    zipcode: {
+        type: Object,
+        minLength: 8,
+        maxLength: 8,
+    },
     isActive: {
         type: Boolean,
         default: true,
